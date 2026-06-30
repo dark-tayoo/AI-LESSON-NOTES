@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lesson Note Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="generator-card">
+        <h2>AI Lesson Note Generator</h2>
+        <p class="subtitle">Aligned with WAEC/NECO/NERDC Standards</p>
+        
+        <form id="lessonForm">
+            <!-- Subject Input -->
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject">
+                    <option value="Biology">Biology</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Physics">Physics</option>
+                </select>
+            </div>
+
+            <!-- Class Level Input -->
+            <div class="form-group">
+                <label for="classLevel">Class Level:</label>
+                <select id="classLevel">
+                    <option value="SS1">SS1</option>
+                    <option value="SS2">SS2</option>
+                    <option value="SS3">SS3</option>
+                </select>
+            </div>
+
+            <!-- Topic Text Field -->
+            <div class="form-group">
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" placeholder="e.g., Photosynthesis" required>
+            </div>
+
+            <!-- Interactive Submit Button -->
+            <button type="submit" id="submitBtn">Generate Note</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
