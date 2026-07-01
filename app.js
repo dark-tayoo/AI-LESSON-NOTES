@@ -18,7 +18,7 @@ document.getElementById('lessonForm').addEventListener('submit', async function(
 
     try {
         // Post structured JSON data to the FastAPI endpoint
-        const response = await fetch('http://127.0.0.1:8001/api/v1/export-lesson-note', {
+        const response = await fetch('https://ai-lesson-notes.onrender.com/api/v1/export-lesson-note', {', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
